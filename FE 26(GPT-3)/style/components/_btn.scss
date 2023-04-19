@@ -1,0 +1,16 @@
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: $nav-link;
+    padding: 15px 30px;
+}
+
+.btn-orange{
+    background-color: $btn-color;
+    border-radius: 0px 5px 5px 0px;
+}
+.btn-black{
+    background-color: black;
+    border-radius: 40px;
+}

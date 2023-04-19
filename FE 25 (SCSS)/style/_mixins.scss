@@ -1,0 +1,15 @@
+// mixin - DRY (don't repeat yourself)
+
+// @mixin border-radius($radius:20px, $var,){
+//     border-radius: $radius;
+//     -webkit-border-radius: $radius;
+//     -moz-border-radius: $radius;
+//     -o-border-radius: $radius;
+// }
+
+
+@mixin display ($j-c: flex-start, $a-i: stretch){
+    display: flex;
+    justify-content: $j-c;
+    align-items: $a-i;
+}

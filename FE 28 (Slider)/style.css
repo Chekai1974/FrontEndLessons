@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    height: 500px;
+
+    position: relative;
+    overflow: hidden;
+}
+.cards{
+    display: grid;
+    /* автоматически размещаемых элементов */
+    grid-auto-flow: column;
+    position: absolute;
+    left: 0; 
+    transition: left 0.5s ease-in-out;
+}
+.card{
+    width: 500px;
+    height: 500px;
+
+    background-size:cover;
+    background-position: center;
+}
+.btns{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    gap: 15px;
+}
+.btns button{
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    border: 2px solid black;
+    /* прозрачний фон */
+    background-color: transparent;
+}
+.btns .active{
+    background-color: chartreuse;
+}

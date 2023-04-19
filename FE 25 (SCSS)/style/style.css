@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  background-color: silver;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 10px;
+}
+.header img {
+  width: 80px;
+  height: 80px;
+  margin-left: 100px;
+}
+.header .menu {
+  margin-left: 1000px;
+  width: 100%;
+  display: flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  align-items: center;
+}
+.header .menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.texts {
+  background-color: aquamarine;
+}
+.texts__1, .texts__2 {
+  color: red;
+  text-decoration: underline;
+  font-size: 18px;
+}
+.texts__2 {
+  background-color: rgb(119, 223, 255);
+}
+
+.cal-1 {
+  width: 8.3333333333%;
+}
+
+.cal-2 {
+  width: 16.6666666667%;
+}
+
+.cal-3 {
+  width: 25%;
+}
+
+.cal-4 {
+  width: 33.3333333333%;
+}
+
+.cal-5 {
+  width: 41.6666666667%;
+}
+
+.cal-6 {
+  width: 50%;
+}
+
+.cal-7 {
+  width: 58.3333333333%;
+}
+
+.cal-8 {
+  width: 66.6666666667%;
+}
+
+.cal-9 {
+  width: 75%;
+}
+
+.cal-10 {
+  width: 83.3333333333%;
+}
+
+.cal-11 {
+  width: 91.6666666667%;
+}
+
+.cal-12 {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

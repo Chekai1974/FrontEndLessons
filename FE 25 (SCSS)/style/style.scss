@@ -1,0 +1,111 @@
+@import "variables";
+@import "mixins";
+
+// basic nesting (вложеность)
+// div{
+//     background-color: aquamarine;
+//     ul{
+//         list-style: none;
+//         display: inline;
+//         li{
+//             color: red;
+//         }        
+//     }
+//     a{
+//         text-decoration: none;
+//         font-size: 22px;
+//         color: orange;
+        
+//         &:hover{// parent selector (&)
+//             background-color: black;
+//         }
+//     }
+// }
+
+// // parent selector (&)
+// // media -queries
+
+// .container{
+//     background-color: $primary-color;
+//     @media (max-width: 1200px){
+//         background-color: red;
+//     }
+//     &_p{
+//         color: black;
+//         font-size: 22px;
+//     }
+//     &_a{
+//         color:  black;
+//         &:hover{
+//             color: white;
+//             background-color: map-get(colors, primary); // import - ariables 
+//         }
+//     }
+//     &_btn{
+//         border:1 solid $primary-color;// import - ariables
+//         width: 120px;
+//         height: 50px;
+//         @include border-radius(15px);// import - mixins
+//         &:hover{
+//             background-color: $primary-color;// import - ariables
+//             border: 2px solid;
+//         }
+//     }
+// }
+
+
+/// TASK 1
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    background-color: $header-background;
+    @include display(center);
+    padding: $header-pading;
+    img{
+        width: $logo-sizes;
+        height: $logo-sizes;
+        margin-left: 100px;
+    }
+    .menu{
+        margin-left: 1000px;
+        width: $header-menu-width;
+        display: flex;
+        @include display(space-around);
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: $header-text-color;
+            font-size: $menu-font-size;
+        }
+    }
+}
+
+
+// @extend 
+.texts{
+    background-color: aquamarine;
+    &__1{
+        color: red;
+        text-decoration: underline;
+        font-size: 18px;
+    }
+    &__2{
+        @extend .texts__1;
+        background-color: rgb(119, 223, 255);
+    }
+}
+
+// @for
+// .col-2 (сразу 2 колонки )
+$colums: 12;
+$grid-width: 100%;
+
+@for $i from 1 through $colums{
+    .cal-#{$i}{
+        width: ($grid-width / $colums) * $i;
+    }
+}
