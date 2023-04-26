@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+input {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+.search {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.recipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.recipe div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.recipe div:hover{
+    transform: scale(0.95);
+}
+.recipe h2 {
+    text-decoration: underline;
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.recipe p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: black;
+}
+
+.recipe ul {
+    margin: 10px 15px;
+    padding: 0;
+}
+
+.recipe li {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#form {
+    display: flex;
+    text-align: center;
+    margin: 20px auto;
+}
